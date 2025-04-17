@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/logo.jpeg" type="image/png">
+  <title>Carregando...</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #f9fbe7;
+      font-family: Arial, sans-serif;
+    }
+
+    .loader-wrapper {
+      position: relative;
+      width: 110px;
+      height: 110px;
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .logo-center {
+      position: absolute;
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      overflow: hidden;
+      z-index: 2;
+    }
+
+    .logo-center img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%; /* Garante que a imagem também seja um círculo */
+    }
+
+    .loader-ring {
+      position: absolute;
+      width: 110px;
+      height: 110px;
+      border: 5px solid #e8f5e9;
+      border-top: 5px solid #4caf50;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      z-index: 1;
+    }
+
+    .verse {
+      max-width: 600px;
+      text-align: center;
+      color: #2e7d32;
+      padding: 20px;
+      font-style: italic;
+      animation: fadeIn 2s ease;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="loader-wrapper">
+    <div class="logo-center">
+      <img src="images/logo.jpeg" alt="Logo">
+    </div>
+    <div class="loader-ring"></div>
+  </div>
+
+    <div class="verse" id="verse"></div>
+
+    <script>
+    const verses = [
+    "Tudo posso naquele que me fortalece. – Filipenses 4:13",
+    "O Senhor é o meu pastor; nada me faltará. – Salmos 23:1",
+    "Porque Deus amou o mundo de tal maneira que deu o seu Filho unigênito, para que todo o que nele crê não pereça, mas tenha a vida eterna. – João 3:16",
+    "Buscai, pois, em primeiro lugar o seu reino e a sua justiça, e todas estas coisas vos serão acrescentadas. – Mateus 6:33",
+    "Não to mandei eu? Esforça-te, e tem bom ânimo; não temas, nem te espantes; porque o Senhor teu Deus é contigo, por onde quer que andares. – Josué 1:9",
+    "Regozijai-vos sempre. Orai sem cessar. – 1 Tessalonicenses 5:16-17",
+    "O Senhor é a minha luz e a minha salvação; a quem temerei? – Salmos 27:1",
+    "Entrega o teu caminho ao Senhor; confia nele, e ele tudo fará. – Salmos 37:5",
+    "Não temas, porque eu sou contigo; não te assombres, porque eu sou o teu Deus; eu te fortaleço, e te ajudo, e te sustento com a destra da minha justiça. – Isaías 41:10",
+    "Clama a mim, e responder-te-ei, e anunciar-te-ei coisas grandes e firmes que não sabes. – Jeremias 33:3",
+    "Bem-aventurados os que têm fome e sede de justiça, porque eles serão fartos. – Mateus 5:6",
+    "O Senhor é bom, ele serve de fortaleza no dia da angústia; e conhece os que confiam nele. – Naum 1:7",
+    "Aquele que habita no esconderijo do Altíssimo, à sombra do Onipotente descansará. – Salmos 91:1",
+    "Confia no Senhor de todo o teu coração, e não te estribes no teu próprio entendimento. – Provérbios 3:5",
+    "O Senhor é fiel em todas as suas palavras e santo em todas as suas obras. – Salmos 145:13",
+    "Deus é o nosso refúgio e fortaleza, socorro bem presente na angústia. – Salmos 46:1",
+    "E a paz de Deus, que excede todo o entendimento, guardará os vossos corações e as vossas mentes em Cristo Jesus. – Filipenses 4:7",
+    "Bom é o Senhor para os que esperam por ele, para a alma que o busca. – Lamentações 3:25",
+    "Disse-lhe Jesus: Eu sou o caminho, e a verdade e a vida; ninguém vem ao Pai, senão por mim. – João 14:6",
+    "Vinde a mim, todos os que estais cansados e sobrecarregados, e eu vos aliviarei. – Mateus 11:28"
+];
+
+        // Mostra um versículo aleatório
+        document.getElementById('verse').textContent = verses[Math.floor(Math.random() * verses.length)];
+
+        // Pega o parâmetro da URL para saber qual página carregar
+        const urlParams = new URLSearchParams(window.location.search);
+        const nextPage = urlParams.get('next');
+
+        // Redireciona após 3 segundos
+        setTimeout(() => {
+            window.location.href = nextPage;
+        }, 3000);
+    </script>
+</body>
+</html>
