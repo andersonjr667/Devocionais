@@ -1,0 +1,17 @@
+ErrorDocument 404 /404.html
+```
+
+Se o redirecionamento para a página 404 ainda não está funcionando, é importante verificar o ambiente em que você está testando. Aqui estão algumas etapas para resolver o problema:
+
+---
+
+### 1. **Certifique-se de que o servidor suporta redirecionamento 404**
+- Se você está usando um servidor local como o Live Server do VS Code, ele não suporta `.htaccess` ou redirecionamentos automáticos para 404.
+- Use um servidor como **XAMPP**, **WAMP**, ou faça o deploy em uma hospedagem que suporte redirecionamentos.
+
+---
+
+### 2. **Teste com `.htaccess` no Apache**
+Certifique-se de que o arquivo `.htaccess` está configurado corretamente e que o módulo `mod_rewrite` está habilitado no Apache.
+
+#### Conteúdo do `.htaccess`:
