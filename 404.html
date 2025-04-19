@@ -3,57 +3,150 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Devocionais Cristãos | Anderson Jr</title>
-  <meta name="description" content="Leia devocionais bíblicos impactantes para jovens e adultos. Palavra diária com base nas Escrituras.">
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <link rel="stylesheet" href="assets/partials/favicon.html">
+  <title>Página Não Encontrada | Devocionais Cristãos</title>
+  <link rel="icon" href="../assets/images/logo.jpeg" type="image/jpeg">
   <style>
-    .not-found-container {
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #6B46C1; /* Roxo */
+      color: #ffffff; /* Branco */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       text-align: center;
-      padding: 50px;
+      overflow: hidden;
     }
 
-    .not-found-container h1 {
+    .logo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-bottom: 20px;
+      animation: bounce 2s infinite;
+    }
+
+    .logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    h1 {
       font-size: 3rem;
-      color: #2e7d32;
+      margin: 0;
+      animation: fadeIn 1.5s ease;
     }
 
-    .not-found-container p {
+    p {
       font-size: 1.2rem;
-      color: #555;
-      margin: 20px 0;
+      margin: 10px 0 30px;
+      animation: fadeIn 2s ease;
     }
 
-    .not-found-container a {
+    a {
       display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      background: #43a047;
-      color: white;
+      padding: 15px 30px;
+      background: #ffffff; /* Branco */
+      color: #6B46C1; /* Roxo */
       text-decoration: none;
-      border-radius: 5px;
-      transition: background 0.3s ease;
+      font-weight: bold;
+      border-radius: 50px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease;
+      animation: fadeIn 2.5s ease;
     }
 
-    .not-found-container a:hover {
-      background: #2e7d32;
+    a:hover {
+      background: #f4f4f4; /* Cinza Claro */
+      color: #1a1a1a; /* Cinza Escuro */
+      transform: translateY(-3px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .background-circles {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: -1;
+    }
+
+    .circle {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.2); /* Branco translúcido */
+      animation: float 20s infinite;
+    }
+
+    .circle:nth-child(1) {
+      width: 150px;
+      height: 150px;
+      top: 10%;
+      left: 20%;
+      animation-delay: 0s;
+    }
+
+    .circle:nth-child(2) {
+      width: 100px;
+      height: 100px;
+      top: 50%;
+      left: 80%;
+      animation-delay: 5s;
+    }
+
+    .circle:nth-child(3) {
+      width: 200px;
+      height: 200px;
+      top: 70%;
+      left: 10%;
+      animation-delay: 2s;
+    }
+
+    .circle:nth-child(4) {
+      width: 120px;
+      height: 120px;
+      top: 30%;
+      left: 60%;
+      animation-delay: 4s;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0) scale(1); opacity: 0.7; }
+      50% { transform: translateY(-20px) scale(1.1); opacity: 0.5; }
+      100% { transform: translateY(0) scale(1); opacity: 0.7; }
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
   </style>
 </head>
 <body>
-  <div class="not-found-container">
-    <h1>404 - Página Não Encontrada</h1>
-    <p>Desculpe, a página que você está procurando não existe ou foi movida.</p>
-    <a href="index.html">Voltar para a Página Inicial</a>
+  <div class="background-circles">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
   </div>
-  <!-- Adicione este script no final de cada página HTML -->
-  <script>
-    // Verifica se a página foi carregada corretamente
-    window.addEventListener('error', function (event) {
-      if (event.target.tagName === 'LINK' || event.target.tagName === 'SCRIPT') {
-        window.location.href = '/404.html';
-      }
-    });
-  </script>
+
+  <div class="logo">
+    <img src="../assets/images/logo.jpeg" alt="Logo">
+  </div>
+  <h1>404 - Página Não Encontrada</h1>
+  <p>Desculpe, a página que você está procurando não existe.</p>
+  <a href="../index.html">Voltar para a Página Inicial</a>
 </body>
 </html>
