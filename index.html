@@ -538,6 +538,15 @@
   </style>
 </head>
 <body>
+  
+<div id="top-header-placeholder"></div>
+<script>
+  fetch("header-top.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("top-header-placeholder").innerHTML = data;
+    });
+</script>
 
   <div class="background-circles">
     <div class="circle"></div>
