@@ -17,8 +17,13 @@
   </div>
 
   <header>
-    <h1>Buscando a Santidade!</h1>
-    <p>MARI TIGRE & ANA</p>
+    <h1>Buscando a Santidade</h1>
+    <p>Reflexões sobre a busca pela santificação</p>
+    <button 
+        class="favorite-button" 
+        onclick="toggleFavorite('/pages/devocionais/buscando-a-santidade.html', 'Buscando a Santidade')"
+        aria-label="Adicionar aos favoritos"
+    ></button>
   </header>
 
   <div class="container">
@@ -127,10 +132,24 @@
     </div>
   </div>
 
+  <section class="compartilhar">
+    <h3>Compartilhe Essa Mensagem</h3>
+    <p>Se essa reflexão tocou seu coração, compartilhe com alguém que possa estar precisando dessas palavras.</p>
+    <a 
+        href="https://wa.me/?text=Leia este devocional: Buscando a Santidade - https://andersonjr667.github.io/Devocionais/pages/devocionais/buscando-a-santidade" 
+        target="_blank"
+        class="share-button"
+    >
+        Enviar pelo WhatsApp
+    </a>
+  </section>
+
   <a href="../../index.html" class="btn">Voltar para a página inicial</a>
 
   <footer>
-    <p>&copy; Devocional - 2025 - Mari Tigre & Ana</p>
+    <p>&copy; 2025 - Mariana Tigre e Ana Luiza</p>
   </footer>
+
+  <script src="../../assets/js/favorites.js"></script>
 </body>
 </html>

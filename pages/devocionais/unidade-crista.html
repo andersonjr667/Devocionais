@@ -18,8 +18,13 @@
   </div>
 
   <header>
-    <h1>Devocional - Unidade Cristã</h1>
-    <p>A importância de mantermos a união como Corpo de Cristo</p>
+    <h1>Unidade Cristã</h1>
+    <p>Reflexões sobre unidade no corpo de Cristo</p>
+    <button 
+        class="favorite-button" 
+        onclick="toggleFavorite('/pages/devocionais/unidade-crista.html', 'Unidade Cristã')"
+        aria-label="Adicionar aos favoritos"
+    ></button>
   </header>
 
   <div class="container">
@@ -51,10 +56,24 @@
     </div>
   </div>
 
+  <section class="compartilhar">
+    <h3>Compartilhe Essa Mensagem</h3>
+    <p>Se essa reflexão tocou seu coração, compartilhe com alguém que possa estar precisando dessas palavras.</p>
+    <a 
+        href="https://wa.me/?text=Leia este devocional: Unidade Cristã - https://andersonjr667.github.io/Devocionais/pages/devocionais/unidade-crista" 
+        target="_blank"
+        class="share-button"
+    >
+        Enviar pelo WhatsApp
+    </a>
+</section>
+
   <a href="../../index.html" class="btn">Voltar para a página inicial</a>
 
   <footer>
-    <p>&copy; Devocional - 2025 - Paulo Emannuel</p>
+    <p>&copy; 2025 - Paulo Emmanuel</p>
   </footer>
+
+  <script src="../../assets/js/favorites.js"></script>
 </body>
 </html>

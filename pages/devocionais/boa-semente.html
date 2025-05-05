@@ -19,7 +19,12 @@
 
     <header>
         <h1>A Boa Semente</h1>
-        <p>Parábola do semeador - Mateus 13</p>
+        <p>Reflexões sobre o crescimento espiritual</p>
+        <button 
+            class="favorite-button" 
+            onclick="toggleFavorite('/pages/devocionais/boa-semente.html', 'A Boa Semente')"
+            aria-label="Adicionar aos favoritos"
+        ></button>
     </header>
 
     <div class="container">
@@ -58,14 +63,24 @@
     </div>
   </main>
 
-  <footer>
-    <p><strong>Mensagem final:</strong> JIBS, produzam bons frutos!</p>
-    <a href="../../index.html" class="btn">Voltar para a página inicial</a>
-  
-    </div>
+  <section class="compartilhar">
+    <h3>Compartilhe Essa Mensagem</h3>
+    <p>Se essa reflexão tocou seu coração, compartilhe com alguém que possa estar precisando dessas palavras.</p>
+    <a 
+        href="https://wa.me/?text=Leia este devocional: A Boa Semente - https://andersonjr667.github.io/Devocionais/pages/devocionais/boa-semente" 
+        target="_blank"
+        class="share-button"
+    >
+        Enviar pelo WhatsApp
+    </a>
+  </section>
 
-    <footer>
-        <p>&copy; Pregacao - 2025 - Thayná Bernades</p>
-    </footer>
+  <a href="../../index.html" class="btn">Voltar para a página inicial</a>
+
+  <footer>
+    <p>&copy; 2025 - Thayná Bernades</p>
+  </footer>
+
+  <script src="../../assets/js/favorites.js"></script>
 </body>
 </html>

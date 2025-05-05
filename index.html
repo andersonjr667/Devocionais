@@ -535,6 +535,115 @@
         transform: translateY(0);
       }
     }
+
+    /* Estilos para a seção de favoritos */
+    .favorites-section {
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 25px;
+        box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+        margin: 40px auto;
+        max-width: 1000px;
+        backdrop-filter: blur(10px);
+        animation: fadeIn 1s ease;
+    }
+
+    .favorites-section h2 {
+        color: #6B46C1;
+        text-align: center;
+        margin-bottom: 25px;
+        font-size: 1.8rem;
+    }
+
+    .favorite-item {
+        background: #ffffff;
+        border-radius: 15px;
+        padding: 20px;
+        margin-bottom: 15px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .favorite-item:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 15px rgba(107, 70, 193, 0.15);
+    }
+
+    .favorite-item-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 10px;
+    }
+
+    .favorite-item-title {
+        font-size: 1.2rem;
+        color: #6B46C1;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .favorite-item-title:hover {
+        text-decoration: underline;
+    }
+
+    .favorite-item-date {
+        font-size: 0.9rem;
+        color: #666666;
+    }
+
+    .favorite-item-actions {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 15px;
+    }
+
+    .remove-favorite {
+        background: #ff5252;
+        color: white;
+        border: none;
+        padding: 8px 15px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 0.9rem;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .remove-favorite:hover {
+        background: #ff1744;
+        transform: translateY(-1px);
+    }
+
+    /* Responsividade para a seção de favoritos */
+    @media (max-width: 768px) {
+        .favorites-section {
+            padding: 20px;
+            margin: 20px 15px;
+        }
+
+        .favorite-item-header {
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .favorite-item-date {
+            font-size: 0.85rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .favorites-section h2 {
+            font-size: 1.5rem;
+        }
+
+        .favorite-item {
+            padding: 15px;
+        }
+
+        .favorite-item-title {
+            font-size: 1.1rem;
+        }
+    }
   </style>
 </head>
 <body>
@@ -562,7 +671,7 @@
 
   <header>
     <h1>Devocionais</h1>
-    <p>Bem-vindo ao espaço de estudos bíblicos e devocionais realizados pela JIBS</p>
+    <p>Reflexões diárias para sua edificação espiritual</p>
   </header>
 
   <div class="container">
@@ -591,6 +700,13 @@
         </div>
       </div>
     </div>
+
+    <section class="favorites-section">
+      <h2>Meus Favoritos</h2>
+      <div id="favorites-list">
+        <!-- Lista de favoritos será preenchida via JavaScript -->
+      </div>
+    </section>
 
     <div class="devocional">
         <h2>Escolha um devocional para ler:</h2>
@@ -792,5 +908,7 @@
       });
   </script>
 
-</body>
+    <script src="assets/js/favorites.js"></script>
+
+  </body>
 </html>

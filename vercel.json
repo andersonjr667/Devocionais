@@ -3,16 +3,17 @@
     { "src": "/(.*)", "dest": "/404.html", "status": 404 }
   ],
   "rewrites": [
-    { "source": "/santidade-e-obediencia", "destination": "/pages/devocionais/santidade-obediencia.html" },
-    { "source": "/reverencia-e-temor", "destination": "/pages/devocionais/reverencia-temor.html" },
-    { "source": "/gratidao", "destination": "/pages/devocionais/gratidao.html" },
-    { "source": "/a-boa-semente", "destination": "/pages/devocionais/boa-semente.html" },
-    { "source": "/unidade-crista", "destination": "/pages/devocionais/unidade-crista.html" },
-    { "source": "/atributos-de-deus", "destination": "/pages/devocionais/atributos-de-deus.html" },
-    { "source": "/humildade-e-soberba", "destination": "/pages/devocionais/humildade-e-soberba.html" },
-    { "source": "/buscando-a-santidade", "destination": "/pages/devocionais/buscando-a-santidade.html" },
-    { "source": "/momentos-dificeis-aflicoes", "destination": "/pages/devocionais/momentos-dificeis.html" },
-    { "source": "/reflexoes-sobre-santidade", "destination": "/pages/devocionais/reflexoes-santidade.html" }
+    { "source": "/pages/devocionais/santidade-obediencia", "destination": "/pages/devocionais/santidade-obediencia.html" },
+    { "source": "/pages/devocionais/reverencia-temor", "destination": "/pages/devocionais/reverencia-temor.html" },
+    { "source": "/pages/devocionais/gratidao", "destination": "/pages/devocionais/gratidao.html" },
+    { "source": "/pages/devocionais/boa-semente", "destination": "/pages/devocionais/boa-semente.html" },
+    { "source": "/pages/devocionais/unidade-crista", "destination": "/pages/devocionais/unidade-crista.html" },
+    { "source": "/pages/devocionais/atributos-de-deus", "destination": "/pages/devocionais/atributos-de-deus.html" },
+    { "source": "/pages/devocionais/humildade-e-soberba", "destination": "/pages/devocionais/humildade-e-soberba.html" },
+    { "source": "/pages/devocionais/buscando-a-santidade", "destination": "/pages/devocionais/buscando-a-santidade.html" },
+    { "source": "/pages/devocionais/momentos-dificeis", "destination": "/pages/devocionais/momentos-dificeis.html" },
+    { "source": "/pages/devocionais/reflexoes-santidade", "destination": "/pages/devocionais/reflexoes-santidade.html" },
+    { "source": "/pages/devocionais/quando-a-mente-grita", "destination": "/pages/devocionais/quando-a-mente-grita.html" }
   ],
   "cleanUrls": true
 }

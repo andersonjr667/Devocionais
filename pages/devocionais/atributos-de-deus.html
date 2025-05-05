@@ -63,6 +63,11 @@
   <header>
     <h1>Devocional - Atributos de Deus</h1>
     <p>Conhecendo mais sobre quem Deus é</p>
+    <button 
+        class="favorite-button" 
+        onclick="toggleFavorite('/pages/devocionais/atributos-de-deus.html', 'Atributos de Deus')"
+        aria-label="Adicionar aos favoritos"
+    ></button>
   </header>
 
   <div class="container">
@@ -105,10 +110,24 @@
     </div>
   </div>
 
+  <section class="compartilhar">
+    <h3>Compartilhe Essa Mensagem</h3>
+    <p>Se essa reflexão tocou seu coração, compartilhe com alguém que possa estar precisando dessas palavras.</p>
+    <a 
+        href="https://wa.me/?text=Leia este devocional: Atributos de Deus - https://andersonjr667.github.io/Devocionais/pages/devocionais/atributos-de-deus" 
+        target="_blank"
+        class="share-button"
+    >
+        Enviar pelo WhatsApp
+    </a>
+  </section>
+
   <a href="../../index.html" class="btn">Voltar para a página inicial</a>
 
   <footer>
     <p>&copy; Devocional - 2025 - Thiago Vieira</p>
   </footer>
+
+  <script src="../../assets/js/favorites.js"></script>
 </body>
 </html>

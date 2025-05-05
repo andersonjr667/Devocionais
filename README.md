@@ -1,80 +1,96 @@
-# 📖 Devocional Web App
+# 📖 Devocionais - Reflexões Cristãs
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Version](https://img.shields.io/badge/version-1.0.0-green.svg)
 
 ## 📋 Sobre o Projeto
 
-Uma aplicação web para leitura e reflexão devocional diária, desenvolvida com HTML, CSS e JavaScript.
+Uma coleção de reflexões e devocionais cristãos para edificação espiritual. O site foi desenvolvido com foco em simplicidade e facilidade de acesso, permitindo que as pessoas possam ler e compartilhar mensagens inspiradoras.
 
 ### ✨ Características
 
-- Interface intuitiva e clean
-- Textos devocionais diários
-- Sistema de favoritos
-- Modo noturno
-- Responsivo para todos os dispositivos
+- Interface limpa e intuitiva
+- Design responsivo para todos os dispositivos
+- Devocionais com temas variados:
+  - Santidade
+  - Obediência
+  - Gratidão
+  - Humildade
+  - Entre outros
+- Compartilhamento fácil via WhatsApp
+- Navegação simples entre as reflexões
 
-## 🚀 Começando
+## 🔗 Acesso
 
-### Pré-requisitos
+O site está disponível em: [https://andersonjr667.github.io/Devocionais/](https://andersonjr667.github.io/Devocionais/)
 
-- Navegador web moderno
-- Conexão com internet
+## 📱 Como Usar
 
-### 🔧 Instalação
+1. Acesse o site
+2. Escolha um devocional da lista disponível
+3. Leia a reflexão
+4. Compartilhe com amigos através do botão de WhatsApp
 
-1. Clone o repositório
-```bash
-git clone https://github.com/andersonjr667/Devocional.git
-```
-
-2. Abra o arquivo index.html em seu navegador
-
-## 💻 Como Usar
-
-1. Acesse a aplicação
-2. Escolha o devocional do dia
-3. Faça suas anotações pessoais
-4. Salve seus favoritos
-
-## 🛠️ Tecnologias
+## 🛠️ Tecnologias Utilizadas
 
 - HTML5
 - CSS3
-- JavaScript
-- LocalStorage para persistência de dados
+- Integração com WhatsApp para compartilhamento
+- GitHub Pages para hospedagem
 
 ## 📁 Estrutura do Projeto
 
 ```
-devocional/
+devocionais/
 ├── assets/          # Recursos estáticos
-│   ├── images/      # Imagens
-│   ├── css/         # Arquivos CSS
-│   └── js/          # Arquivos JavaScript
-├── pages/           # Páginas HTML
-│   ├── devocionais/ # Devocionais individuais
+│   ├── images/      # Imagens e ícones
+│   └── css/         # Estilos CSS
+├── pages/           # Páginas do site
+│   ├── devocionais/ # Textos devocionais
 │   └── loading.html # Página de carregamento
-├── index.html       # Página inicial
-└── README.md        # Documentação
+└── index.html       # Página inicial
 ```
+
+## 📖 Conteúdo
+
+O site conta com diversos devocionais sobre temas importantes para a vida cristã:
+
+- Santidade e Obediência
+- Reverência e Temor
+- Gratidão
+- A Boa Semente
+- Unidade Cristã
+- Atributos de Deus
+- Humildade e Soberba
+- Buscando a Santidade
+- Momentos Difíceis
+- Reflexões sobre Santidade
+- Quando a Mente Grita
 
 ## 👥 Contribuição
 
+Se você deseja contribuir com novos devocionais ou melhorias:
+
 1. Faça um Fork do projeto
-2. Crie uma Branch para sua Feature (`git checkout -b feature/AmazingFeature`)
-3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. Push para a Branch (`git push origin feature/AmazingFeature`)
+2. Crie uma Branch para sua contribuição (`git checkout -b feature/NovoDevocional`)
+3. Faça o Commit das suas alterações (`git commit -m 'Adicionando novo devocional'`)
+4. Push para a Branch (`git push origin feature/NovoDevocional`)
 5. Abra um Pull Request
 
-## 📄 Licença
+## ✍️ Autores e Colaboradores
 
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+Os devocionais foram escritos por diversos autores cristãos, incluindo:
+- Anderson Jr
+- Mari Tigre
+- Julia
+- Paulo Emanuel
+- Thiago Vieira
+- Ana
+- Thata
+- Outros colaboradores
 
 ## 📞 Contato
 
-Link do Projeto: [https://github.com/andersonjr667/devocional](https://github.com/andersonjr667/devocional)
+Link do Projeto: [https://github.com/andersonjr667/Devocionais](https://github.com/andersonjr667/Devocionais)
 
 ---
-⌨️ com ❤️ por [Anderson Jr](https://github.com/andersonjr667)
+⌨️ Desenvolvido com ❤️ para a glória de Deus

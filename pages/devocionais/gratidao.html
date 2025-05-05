@@ -18,8 +18,13 @@
     </div>
 
     <header>
-        <h1>Devocional - Gratidão</h1>
-        <p>Reflexões sobre um coração agradecido</p>
+        <h1>Gratidão</h1>
+        <p>Reflexões sobre ter um coração grato</p>
+        <button 
+            class="favorite-button" 
+            onclick="toggleFavorite('/pages/devocionais/gratidao.html', 'Gratidão')"
+            aria-label="Adicionar aos favoritos"
+        ></button>
     </header>
 
     <div class="container">
@@ -109,10 +114,24 @@
         </div>
     </div>
 
+    <section class="compartilhar">
+        <h3>Compartilhe Essa Mensagem</h3>
+        <p>Se essa reflexão tocou seu coração, compartilhe com alguém que possa estar precisando dessas palavras.</p>
+        <a 
+            href="https://wa.me/?text=Leia este devocional: Gratidão - https://andersonjr667.github.io/Devocionais/pages/devocionais/gratidao" 
+            target="_blank"
+            class="share-button"
+        >
+            Enviar pelo WhatsApp
+        </a>
+    </section>
+
     <a href="../../index.html" class="btn">Voltar para a página inicial</a>
 
     <footer>
-        <p>&copy; Devocional - 2025 - Rafique & Luan</p>
+        <p>&copy; 2025 - Luan e Rafique</p>
     </footer>
+
+    <script src="../../assets/js/favorites.js"></script>
 </body>
 </html>

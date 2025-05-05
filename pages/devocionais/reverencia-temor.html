@@ -18,8 +18,13 @@
     </div>
 
     <header>
-        <h1>Devocional - Reverência e Temor</h1>
-        <p>Reflexões sobre a importância de reverenciar e temer ao Senhor</p>
+        <h1>Reverência e Temor</h1>
+        <p>Reflexões sobre reverência e temor a Deus</p>
+        <button 
+            class="favorite-button" 
+            onclick="toggleFavorite('/pages/devocionais/reverencia-temor.html', 'Reverência e Temor')"
+            aria-label="Adicionar aos favoritos"
+        ></button>
     </header>
 
     <div class="container">
@@ -79,10 +84,24 @@
         </div>
     </div>
 
+    <section class="compartilhar">
+        <h3>Compartilhe Essa Mensagem</h3>
+        <p>Se essa reflexão tocou seu coração, compartilhe com alguém que possa estar precisando dessas palavras.</p>
+        <a 
+            href="https://wa.me/?text=Leia este devocional: Reverência e Temor - https://andersonjr667.github.io/Devocionais/pages/devocionais/reverencia-temor" 
+            target="_blank"
+            class="share-button"
+        >
+            Enviar pelo WhatsApp
+        </a>
+    </section>
+
     <a href="../../index.html" class="btn">Voltar para a página inicial</a>
 
     <footer>
         <p>&copy; 2025 - Anderson Jr</p>
     </footer>
+
+    <script src="../../assets/js/favorites.js"></script>
 </body>
 </html>
