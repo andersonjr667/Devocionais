@@ -541,11 +541,16 @@
   
 <div id="top-header-placeholder"></div>
 <script>
-  fetch("header-top.html")
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById("top-header-placeholder").innerHTML = data;
-    });
+  // Variável de controle para habilitar/desabilitar o header
+  const enableHeader = false; // Mude para true quando quiser habilitar o header se quiser desabilitar false
+
+  if (enableHeader) {
+    fetch("header-top.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("top-header-placeholder").innerHTML = data;
+      });
+  }
 </script>
 
   <div class="background-circles">
@@ -590,74 +595,81 @@
     <div class="devocional">
         <h2>Escolha um devocional para ler:</h2>
         <ul id="devocionais-list" class="devocionais-grid">
-            <li data-category="paulo anderson" onclick="window.location.href='pages/loading.html?next=devocionais/santidade-obediencia.html'">
+            <li data-category="paulo anderson" onclick="window.location.href='pages/devocionais/santidade-obediencia.html'">
                 <div class="content">
                     <img src="https://cdn-icons-png.flaticon.com/512/2142/2142712.png" alt="Ícone">
                     <span>Santidade e Obediência</span>
                     <small>por Paulo Emmanuel e Anderson Jr</small>
                 </div>
             </li>
-            <li data-category="anderson" onclick="window.location.href='pages/loading.html?next=devocionais/reverencia-temor.html'">
+            <li data-category="anderson" onclick="window.location.href='pages/devocionais/reverencia-temor.html'">
                 <div class="content">
                     <img src="https://cdn-icons-png.flaticon.com/512/1092/1092337.png" alt="Ícone">
                     <span>Reverência e Temor</span>
                     <small>por Anderson Jr</small>
                 </div>
             </li>
-            <li data-category="luan rafique" onclick="window.location.href='pages/loading.html?next=devocionais/gratidao.html'">
+            <li data-category="luan rafique" onclick="window.location.href='pages/devocionais/gratidao.html'">
                 <div class="content">
                     <img src="https://static.thenounproject.com/png/3068034-200.png" alt="Ícone">
                     <span>Gratidão</span>
                     <small>por Luan e Rafique</small>
                 </div>
             </li>
-            <li data-category="thayna" onclick="window.location.href='pages/loading.html?next=devocionais/boa-semente.html'">
+            <li data-category="thayna" onclick="window.location.href='pages/devocionais/boa-semente.html'">
                 <div class="content">
                     <img src="https://img.icons8.com/ios-filled/50/plant-under-rain.png" alt="Ícone">
                     <span>A Boa Semente</span>
                     <small>por Thayná Bernades</small>
                 </div>
             </li>
-            <li data-category="paulo" onclick="window.location.href='pages/loading.html?next=devocionais/unidade-crista.html'">
+            <li data-category="paulo" onclick="window.location.href='pages/devocionais/unidade-crista.html'">
                 <div class="content">
                     <img src="https://img.icons8.com/?size=256w&id=105096&format=png" alt="Ícone"> 
                     <span>Unidade Cristã</span>
                     <small>por Paulo Emmanuel</small>
                 </div>
             </li>
-            <li data-category="pr.thiago" onclick="window.location.href='pages/loading.html?next=devocionais/atributos-de-deus.html'">
+            <li data-category="pr.thiago" onclick="window.location.href='pages/devocionais/atributos-de-deus.html'">
                 <div class="content">
                     <img src="https://cdn-icons-png.flaticon.com/512/223/223399.png" alt="Ícone"> 
                     <span>Atributos de Deus</span>
                     <small>por Thiago Vieira</small>
                 </div>
             </li>
-            <li data-category="julia marit" onclick="window.location.href='pages/loading.html?next=devocionais/humildade-e-soberba.html'">
+            <li data-category="julia marit" onclick="window.location.href='pages/devocionais/humildade-e-soberba.html'">
                 <div class="content">
                     <img src="https://www.caapora.pb.gov.br/img/icones/transparencia/aperto-de-mao.png" alt="Ícone"> 
-                    <span>Hulmildade e Soberba</span>
+                    <span>Humildade e Soberba</span>
                     <small>por Mariana Tigre e Julia</small>
                 </div>
             </li>
-            <li data-category="aninha marit" onclick="window.location.href='pages/loading.html?next=devocionais/buscando-a-santidade.html'">
+            <li data-category="aninha marit" onclick="window.location.href='pages/devocionais/buscando-a-santidade.html'">
                 <div class="content">
                     <img src="https://cdn-icons-png.flaticon.com/512/4671/4671247.png" alt="Ícone"> 
                     <span>Buscando a Santidade</span>
-                    <small>por Mariana Tigre e Ana</small>
+                    <small>por Mariana Tigre e Ana Luiza</small>
                 </div>
             </li>
-            <li data-category="paulo" onclick="window.location.href='pages/loading.html?next=devocionais/momentos-dificeis.html'">
+            <li data-category="paulo" onclick="window.location.href='pages/devocionais/momentos-dificeis.html'">
                 <div class="content">
                     <img src="https://img.icons8.com/?size=256w&id=mbV45xYxqcl9&format=png" alt="Ícone"> 
                     <span>Momentos difíceis/Aflicoes</span>
                     <small>por Paulo Emanuel</small>
                 </div>
             </li>
-            <li data-category="ana thais" onclick="window.location.href='pages/loading.html?next=devocionais/reflexoes-santidade.html'">
+            <li data-category="ana thais" onclick="window.location.href='pages/devocionais/reflexoes-santidade.html'">
                 <div class="content">
                     <img src="https://cdn-icons-png.flaticon.com/512/706/706487.png" alt="Ícone">
                     <span>Reflexões sobre Santidade</span>
-                    <small>por Ana & Thata</small>
+                    <small>por Ana & Thais</small>
+                </div>
+            </li>
+            <li data-category="anderson" onclick="window.location.href='pages/devocionais/quando-a-mente-grita.html'">
+                <div class="content">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2142/2142712.png" alt="Ícone">
+                    <span>Quando a Mente Grita e a Fé Se Cala</span>
+                    <small>por Anderson Jr</small>
                 </div>
             </li>
             <!-- Adicione mais devocionais aqui com a mesma estrutura -->
